@@ -1,0 +1,12 @@
+Total Advertisement Expenditure for each vehicle using pie chart
+        exp_data=yearly_data.groupby('Vehicle_Type')['Advertising_Expenditure'].sum().reset_index()
+        Y_chart4 = dcc.Graph(
+            figure=px.pie(exp_data,
+                 values='Advertising_Expenditure',
+                 names = 'Vehicle_Type'
+                 title = 'Total Advertisement Expenditure for each vehicle type in the year {}'.format(input_year))
+
+  File "DV0101EN-Final_Assign_Part_2_Questions.py", line 145inal_Assign_Part_2_Qu
+    exp_data=yearly_data.groupby('Vehicle_Type')['Advertising_Expenditure'].sum().reset_index()
+    ^
+SyntaxError: invalid syntax
